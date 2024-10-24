@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Webchat</title>
-  <h1>Look in the bottom right corner.</h1>
+  <title>UAS Dubai</title>
+  <style>
+    h1 {
+      font-size: 36px;
+    }
+
+    body {
+      font-size: 20px;
+    }
+
+    .bp-widget-container {
+      width: 500px !important;
+      height: 700px !important;
+    }
+  </style>
 </head>
 <body>
+  <h1>Look in the bottom right corner.</h1>
+
   <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  
+  <script>
+    window.botpressWebChat.init({
+      botId: 'YOUR_BOT_ID',
+      hostUrl: 'https://cdn.botpress.cloud/webchat/v2',
+      stylesheet: '.bp-widget-container { width: 500px !important; height: 700px !important; }'
+    });
+  </script>
+
   <script src="https://files.bpcontent.cloud/2024/10/24/11/20241024112040-6LRJ5TDX.js"></script>    
 </body>
 </html>
